@@ -1,0 +1,18 @@
+#to trace the output
+predefined_topics_file predef_top
+trace_output protocol
+
+#normal MQTT listener
+listener 1885 INADDR_ANY mqtt
+
+#MQTT-SN listener
+listener 1883 INADDR_ANY mqtts
+
+#MQTT outgoing remote bridge
+connection cloudmqtt
+address 37.187.106.16:1883
+try_private false
+start_type automatic
+topic temp/random in "Server/" ""
+topic "" out "time" "temp/random"
+topic temp/random out

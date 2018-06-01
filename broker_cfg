@@ -1,0 +1,22 @@
+#to trace the output
+predefined_topics_file predef_top
+trace_output protocol
+
+#normal MQTT listener
+listener 1885 INADDR_ANY mqtt
+
+#MQTT-SN listener
+listener 1883 INADDR_ANY mqtts
+
+#MQTT outgoing remote bridge
+connection cloudmqtt
+address 54.75.8.165:14099
+username bjrpfvko
+password CJnHYq8KVuMr
+try_private false
+start_type automatic
+topic # in "Invalid/" "Client/"
+topic # in "Server/" ""
+topic time out "" "Client/"
+topic datetime out "" "Client/"
+topic temp/random out "" "Client/"

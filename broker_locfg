@@ -1,0 +1,9 @@
+#to trace the output
+trace_output protocol
+predefined_topics_file predef_top
+
+#normal MQTT listener
+listener 1885 INADDR_ANY mqtt
+
+#MQTT-SN listener
+listener 1883 INADDR_ANY mqtts
