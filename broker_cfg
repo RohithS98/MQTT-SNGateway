@@ -10,9 +10,9 @@ listener 1883 INADDR_ANY mqtts
 
 #MQTT outgoing remote bridge
 connection cloudmqtt
-address 54.75.8.165:14099
-username bjrpfvko
-password CJnHYq8KVuMr
+address 54.75.8.165:xxxx
+username xxx
+password xxx
 try_private false
 start_type automatic
 topic # in "Invalid/" "Client/"
